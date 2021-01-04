@@ -1,0 +1,74 @@
+<div id="apply" class="apply">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>¡Nuevas vacantes!</h2>
+                <div class="section-title">Postúlate</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="button-group filters-button-group text-uppercase">
+                    <a class="button is-checked" data-filter="*"><span>Todas</span></a>
+                    <a *ngFor="let applyName of applies | uniqueJson;" ngClass="button" [attr.data-filter]="'.vac-' + applyName"><span>{{applyName}}</span></a>
+                </div>
+                <div [class]="'grid'">
+                    <div *ngFor="let apply of applies; let last = last" ngClass="apply-item" [class]="'vac-' + apply.filterID">
+                        <a [attr.data-toggle]="'modal'" [attr.data-target]="'#exampleModal'" href="#vac-1" (click)="this.applySelected = apply;">
+                            <div ngClass="apply-item-overlay">
+                                <span>{{apply.title}} {{last ? createGrid() : ''}}</span>
+                            </div>
+                            <img src="{{apply.imgPath}}" alt="alt">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{this.applySelected.modalTitle}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7" [innerHTML]="this.applySelected.modalBody">
+                    </div>
+                    <div class="col-lg-5">
+                        <h4>Postúlate:</h4>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="txtName" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="txtPho" placeholder="Teléfono">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="txtEma" placeholder="Email">
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile" style="color: #495057cf;">Carga tu CV (formato PDF)</label>
+                            </div><br><br>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">He leído el Aviso de Privacidad</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" [attr.data-apply]="this.applySelected.title">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->

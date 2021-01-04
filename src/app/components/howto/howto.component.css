@@ -1,0 +1,237 @@
+.howto .area-1 {
+    height: 27rem;
+    /* background: url('https://fakeimg.pl/710x550') center center no-repeat; */
+    background: url('../../../assets/img/new/howto1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.howto .howto-container {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 6.375rem;
+    padding-bottom: 1.5rem;
+}
+
+.howto h2 {
+    margin-bottom: 1.625rem;
+}
+
+.howto .item {
+    margin-bottom: 2rem;
+}
+
+.howto h4 {
+    margin-bottom: 0;
+}
+
+.howto span[aria-expanded="true"] .sec-number,
+.howto span[aria-expanded="false"] .sec-number {
+    display: inline-block;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 0.875rem;
+    border: 0.125rem solid #0A9DFF;
+    background-color: #0A9DFF;
+    color: #fff;
+    font: 700 1rem/2.125rem "Castoro", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: rotate(45deg);
+}
+
+.howto span[aria-expanded="false"] .sec-number {
+    border: 0.125rem solid #484a46;
+    background-color: transparent;
+    color: #484a46;
+}
+
+.sec-number i {
+    transform: rotate(-45deg);
+}
+
+.howto .item:hover span[aria-expanded="false"] .sec-number {
+    border: 0.125rem solid #0A9DFF;
+    color: #0A9DFF;
+}
+
+.howto .howto-title {
+    display: inline-block;
+    width: 70%;
+    margin-top: 0.125rem;
+    margin-bottom: 0.25rem;
+    color: #484a46;
+    font: 700 1.25rem/1.75rem "Castoro", sans-serif;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.howto .item:hover .howto-title {
+    color: #0A9DFF;
+}
+
+.howto span[aria-expanded="true"] .howto-title {
+    color: #0A9DFF;
+}
+
+.howto .howto-body {
+    margin-left: 3.125rem;
+}
+
+.howto2 .howto-container {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 6.375rem;
+    padding-bottom: 1.5rem;
+}
+
+.howto2 .area-1 {
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.howto2 .area-2 {
+    height: 100%;
+    display: inline-block;
+}
+
+.howto2 h2 {
+    margin-bottom: 1.625rem;
+}
+
+.howto2 .item {
+    margin-bottom: 2rem;
+}
+
+.howto2 h4 {
+    margin-bottom: 0;
+}
+
+.howto2 span[aria-expanded="true"] .sec-number,
+.howto2 span[aria-expanded="false"] .sec-number {
+    display: inline-block;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 0.875rem;
+    border: 0.125rem solid #0A9DFF;
+    background-color: #0A9DFF;
+    color: #fff;
+    font: 700 1rem/2.125rem "Castoro", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: rotate(45deg);
+}
+
+.howto2 span[aria-expanded="false"] .sec-number {
+    border: 0.125rem solid #484a46;
+    background-color: transparent;
+    color: #484a46;
+}
+
+.sec-number i {
+    transform: rotate(-45deg);
+}
+
+.howto2 .item:hover span[aria-expanded="false"] .sec-number {
+    border: 0.125rem solid #0A9DFF;
+    color: #0A9DFF;
+}
+
+.howto2 .howto-title {
+    display: inline-block;
+    width: 70%;
+    margin-top: 0.125rem;
+    margin-bottom: 0.25rem;
+    color: #484a46;
+    font: 700 1.25rem/1.75rem "Castoro", sans-serif;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.howto2 .item:hover .howto-title {
+    color: #0A9DFF;
+}
+
+.howto2 span[aria-expanded="true"] .howto-title {
+    color: #0A9DFF;
+}
+
+.howto2 .howto-body {
+    margin-left: 3.125rem;
+}
+
+.howto2 .area-2 {
+    height: 27rem;
+    /* background: url('https://fakeimg.pl/710x550') center center no-repeat; */
+    background: url('../../../assets/img/new/howto2.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+
+/* Mediaqueries */
+
+@media (min-width: 768px) {
+    .howto .howto-container,
+    .howto2 .howto-container {
+        max-width: 70%;
+    }
+    .howto2 .area-1,
+    .howto2 .area-2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .howto2 .howto-container {
+        padding-top: 0;
+    }
+    .howto2 .area-2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .howto,
+    .howto2 {
+        height: 34.625rem;
+    }
+    .howto .area-1,
+    .howto2 .area-1 {
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+    }
+    .howto .area-2,
+    .howto2 .area-2 {
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .howto .howto-container,
+    .howto2 .howto-container {
+        max-width: 88%;
+        margin-left: 2rem;
+        padding-bottom: 0;
+    }
+    .howto .howto-title,
+    .howto2 .howto-title {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .howto .howto-container,
+    .howto2 .howto-container {
+        max-width: 28rem;
+        margin-left: 5rem;
+    }
+}

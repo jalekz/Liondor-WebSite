@@ -1,0 +1,113 @@
+.contact {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #044068;
+}
+
+.contact .text-container {
+    margin-bottom: 3rem;
+}
+
+.contact .section-title {
+    margin-bottom: 0.5rem;
+}
+
+.contact h2 {
+    margin-bottom: 1.375rem;
+    color: #fff;
+}
+
+.contact p,
+.contact li,
+.contact label,
+.contact h3,
+.contact a {
+    color: #fff;
+}
+
+.contact button {
+    font-family: 'Castoro', sans-serif;
+}
+
+.contact .list-unstyled {
+    margin-bottom: 2.25rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.contact .list-unstyled .fas,
+.contact .list-unstyled .fab {
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+    color: #0A9DFF;
+}
+
+.contact .list-unstyled .fa-phone {
+    vertical-align: 3%;
+}
+
+.contact h3 {
+    margin-bottom: 1rem;
+}
+
+.contact .fa-stack {
+    margin-right: 0.25rem;
+    margin-bottom: 0.75rem;
+    margin-left: 0.125rem;
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.contact .fa-stack .diamond {
+    position: absolute;
+    width: 3.25rem;
+    height: 3.25rem;
+    /* background: url('assets/img/diamond-white.svg') center center no-repeat; */
+    background-size: 3.25rem 3.25rem;
+    transition: all 0.2s ease;
+}
+
+.contact .fa-stack:hover .diamond {
+    background: url('../../../assets/img/diamond-white.svg') center center no-repeat;
+    background-size: 3.25rem 3.25rem;
+}
+
+.contact .fa-stack-1x {
+    font-size: 1.5rem;
+    line-height: 3.25rem;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.contact .fa-stack:hover .fa-stack-1x {
+    color: #044068;
+}
+
+@media (min-width: 768px) {
+    .contact .list-unstyled li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .contact .list-unstyled .address {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact {
+        padding-top: 6.875rem;
+    }
+    .contact .text-container {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact .text-container {
+        margin-top: 0.875rem;
+        margin-right: 1.5rem;
+    }
+    .contact form {
+        margin-left: 1.5rem;
+    }
+}

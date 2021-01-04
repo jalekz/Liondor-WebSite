@@ -1,0 +1,82 @@
+.services-1 {
+    padding-top: 5rem;
+    padding-bottom: 2.875rem;
+}
+
+.services-1 .section-title {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services-1 h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services-1 .card {
+    margin-bottom: 2.5rem;
+    border: none;
+    text-align: center;
+}
+
+.services-1 .fa-stack {
+    width: 6rem;
+    height: 6rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    line-height: 6rem;
+    text-align: left;
+}
+
+.services-1 .fa-stack .diamond {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: url('../../../assets/img/diamond-blue.svg') center center no-repeat;
+    background-size: 6rem 6rem;
+}
+
+.services-1 .fa-stack-1x {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.services-1 .card-body {
+    padding: 0;
+}
+
+.services-1 .card-body p {
+    text-align: justify;
+}
+
+.services-1 .card-title {
+    margin-bottom: 0.625rem;
+}
+
+
+/* Mediaqueries */
+
+@media (min-width: 992px) {
+    .services-1 .card {
+        display: inline-block;
+        max-width: 17.5rem;
+        text-align: left;
+        vertical-align: top;
+    }
+    .services-1 div.card.card-middle {
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .services-1 .card {
+        max-width: 21rem;
+        text-align: center;
+    }
+    .services-1 div.card.card-middle {
+        margin-right: 2.875rem;
+        margin-left: 2.875rem;
+    }
+}

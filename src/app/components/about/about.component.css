@@ -1,0 +1,50 @@
+.about-1 {
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+}
+
+.about-1 .text-container {
+    margin-bottom: 3rem;
+}
+
+.about-1 .section-title {
+    margin-bottom: 0.5rem;
+}
+
+.about-1 h2 {
+    margin-bottom: 1rem;
+}
+
+.about-1 .testimonial-author {
+    color: #484a46;
+}
+
+.about-1 .image-container {
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+
+.about-1 .image-container img {
+    margin: 0;
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+}
+
+
+/* Mediaqueries */
+
+@media (min-width: 992px) {
+    .about-1 {
+        padding-top: 6.875rem;
+    }
+    .about-1 .text-container {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-1 .text-container {
+        margin-top: 1.875rem;
+        margin-right: 3rem;
+    }
+}
