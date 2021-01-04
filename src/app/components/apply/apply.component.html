@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="button-group filters-button-group text-uppercase">
-                    <a class="button is-checked" data-filter="*"><span>Todas</span></a>
+                    <a class="button is-checked all-filter" data-filter="*"><span>Todas</span></a>
                     <a *ngFor="let applyName of applies | uniqueJson;" ngClass="button" [attr.data-filter]="'.vac-' + applyName"><span>{{applyName}}</span></a>
                 </div>
                 <div [class]="'grid'">

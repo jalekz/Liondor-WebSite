@@ -11,6 +11,7 @@ export class ApplyComponent implements OnInit {
 
   applies: Apply[] = [];
   gridCreated: boolean = false;
+  gridResponsive: boolean = false;
   applySelected: Apply = {
     filterID: "",
     imgPath: "",
@@ -24,6 +25,9 @@ export class ApplyComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      $(".all-filter").click();
+    }, 1000);
   }
 
   createGrid() {
@@ -45,7 +49,7 @@ export class ApplyComponent implements OnInit {
         });
       });
       this.gridCreated = true;
-      console.log("in");
+      $grid.isotope('reloadItems');
     }
   }
 }

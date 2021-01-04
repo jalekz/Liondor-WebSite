@@ -112,7 +112,6 @@
 @media (min-width: 1200px) {
     .apply .apply-item {
         width: 17.3125rem;
-        /* to eliminate grid overflow problem on hard refresh */
         height: 16.875rem;
     }
     .apply .apply-item .apply-item-overlay span {
