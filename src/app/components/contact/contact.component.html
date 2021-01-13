@@ -39,22 +39,27 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <form>
+                <form autocomplete="off" (ngSubmit)="sendMailMsg(formContact)" #formContact="ngForm">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="txtName" placeholder="Nombre">
+                        <input type="text" class="form-control" name="nameContact" placeholder="Nombre" ngModel required [class.is-invalid]="nameContact.invalid && nameContact.touched" #nameContact="ngModel">
+                        <small *ngIf="nameContact.invalid && nameContact.touched" class="form-text text-danger">Campo obligatorio</small>
                     </div>
                     <div class="form-group">
-                        <input type="number" class="form-control" id="txtPho" placeholder="Teléfono">
+                        <input type="text" class="form-control" name="phoneContact" placeholder="Teléfono" ngModel required pattern="^[0-9]*$" [class.is-invalid]="phoneContact.invalid && phoneContact.touched" #phoneContact="ngModel" minlength="10" maxlength="10">
+                        <small *ngIf="phoneContact.invalid && phoneContact.touched" class="form-text text-danger">Campo obligatorio</small>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="txtEma" placeholder="Email">
+                        <input type="email" class="form-control" name="emailContact" placeholder="Email" ngModel required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [class.is-invalid]="emailContact.invalid && emailContact.touched" #emailContact="ngModel">
+                        <small *ngIf="emailContact.invalid && emailContact.touched" class="form-text text-danger">Ingrese un correo válido</small>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje..."></textarea>
+                        <textarea class="form-control" name="msgContact" rows="3" placeholder="Mensaje..." ngModel required [class.is-invalid]="msgContact.invalid && msgContact.touched" #msgContact="ngModel"></textarea>
+                        <small *ngIf="msgContact.invalid && msgContact.touched" class="form-text text-danger">Ingrese un correo válido</small>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">He leído el Aviso de Privacidad</label>
+                        <input type="checkbox" class="custom-control-input" name="privContact" id="privContact" ngModel required [class.is-invalid]="privContact.invalid && privContact.touched" #privContact="ngModel">
+                        <label class="custom-control-label" for="privContact">He leído el Aviso de Privacidad</label>
+                        <small *ngIf="privContact.invalid && privContact.touched" class="form-text text-danger">Favor de aceptar Aviso de Privacidad</small>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Enviar</button>
                 </form>
