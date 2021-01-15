@@ -88,7 +88,7 @@ export class ApplyComponent implements OnInit {
       this.mailObject.fullname = formApply.value.nameApply;
       this.mailObject.tel = formApply.value.phoneApply;
       this.mailObject.email = formApply.value.emailApply;
-      this.mailObject.att = this.cvBaseData.toString().split(',')[1];
+      this.mailObject.att = this.cvBaseData.toString();
       
       this._mailsService.sendMail(this.mailObject, "/Vacant/sendMail").subscribe(
         result => {
