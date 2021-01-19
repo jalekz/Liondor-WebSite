@@ -121,6 +121,11 @@ a:hover.scroll-to-top {
     background-color: #0A9DFF;
 }
 
+.privacyLink {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 /* MEDIAQUERIES */
 

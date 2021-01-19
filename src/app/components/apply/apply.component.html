@@ -63,7 +63,7 @@
                             </div><br><br>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="privApply" id="privCheck" ngModel required [class.is-invalid]="privApply.invalid && privApply.touched" #privApply="ngModel">
-                                <label class="custom-control-label" for="privCheck">He leído el Aviso de Privacidad</label>
+                                <label class="custom-control-label" for="privCheck">He leído el <a [attr.data-toggle]="'modal'" [attr.data-target]="'#privacyModal'" ngClass="privacyLink">Aviso de Privacidad</a></label>
                                 <small *ngIf="privApply.invalid && privApply.touched" class="form-text text-danger">Favor de aceptar Aviso de Privacidad</small>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block" [attr.data-apply]="this.applySelected.title" [disabled]="formApply.pristine">Enviar</button>
