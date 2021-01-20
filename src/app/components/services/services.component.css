@@ -57,11 +57,19 @@
 
 /* Mediaqueries */
 
+@media (min-width: 768px) {
+    .services-1 .card {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+    }
+}
+
 @media (min-width: 992px) {
     .services-1 .card {
         display: inline-block;
-        max-width: 17.5rem;
-        text-align: left;
+        /* max-width: 17.5rem; */
+        text-align: center;
         vertical-align: top;
     }
     .services-1 div.card.card-middle {
@@ -72,7 +80,7 @@
 
 @media (min-width: 1200px) {
     .services-1 .card {
-        max-width: 21rem;
+        /* max-width: 21rem; */
         text-align: center;
     }
     .services-1 div.card.card-middle {
