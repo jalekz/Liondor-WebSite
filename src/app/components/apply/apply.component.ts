@@ -21,6 +21,7 @@ export class ApplyComponent implements OnInit {
   cvBaseData: string | ArrayBuffer = "";
   applySelected: Apply = {
     filterID: "",
+    category: "",
     imgPath: "",
     modalBody: "",
     modalTitle: "",

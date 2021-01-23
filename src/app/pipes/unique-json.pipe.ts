@@ -11,11 +11,11 @@ export class UniqueJsonPipe implements PipeTransform {
       value.forEach(e => {
         if(uniqueList.length > 0) {
           if(!uniqueList.includes(e.filterID)) {
-            uniqueList.push(e.filterID);
+            uniqueList.push(e.filterID + "|" + e.category);
           }
         }
         else
-          uniqueList.push(e.filterID);
+          uniqueList.push(e.filterID + "|" + e.category);
       });
       return uniqueList
     }

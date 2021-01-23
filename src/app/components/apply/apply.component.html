@@ -8,9 +8,9 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <div class="button-group filters-button-group text-uppercase">
+                <div class="button-group filters-button-group">
                     <a class="button is-checked all-filter" data-filter="*"><span>Todas</span></a>
-                    <a *ngFor="let applyName of applies | uniqueJson;" ngClass="button" [attr.data-filter]="'.vac-' + applyName"><span>{{applyName}}</span></a>
+                    <a *ngFor="let applyName of applies | uniqueJson;" ngClass="button" [attr.data-filter]="'.vac-' + applyName.split('|')[0]"><span>{{applyName.split('|')[1]}}</span></a>
                 </div>
                 <div [class]="'grid'">
                     <div *ngFor="let apply of applies; let last = last" ngClass="apply-item" [class]="'vac-' + apply.filterID">

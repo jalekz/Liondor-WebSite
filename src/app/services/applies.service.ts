@@ -13,6 +13,7 @@ export class AppliesService {
 
 export interface Apply {
     filterID: string;
+    category: string;
     title: string;
     imgPath: string;
     modalTitle: string;
