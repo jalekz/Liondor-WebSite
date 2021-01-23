@@ -15,7 +15,7 @@ export class ApplyComponent implements OnInit {
 
   applies: Apply[] = [];
   gridCreated: boolean = false;
-  fileName: string = "Carga tu CV (formato PDF | max 5MB)";
+  fileName: string = "Carga tu CV (formato PDF)";
   fileError: string = "Seleccione un archivo con formato PDF";
   fileValid: boolean = false;
   cvBaseData: string | ArrayBuffer = "";
@@ -101,7 +101,7 @@ export class ApplyComponent implements OnInit {
             });
             formApply.resetForm();
             this.cvBaseData = "";
-            this.fileName = "Carga tu CV (formato PDF | max 5MB)";
+            this.fileName = "Carga tu CV (formato PDF)";
             this.fileValid = false;
             
           }
@@ -132,13 +132,13 @@ export class ApplyComponent implements OnInit {
 
       if (fileInput.target.files[0].size > max_size) {
         this.fileError = "El archivo debe ser de menos de 5MB";
-        this.fileName = "Carga tu CV (formato PDF | max 5MB)";
+        this.fileName = "Carga tu CV (formato PDF)";
         this.fileValid = false;
         return false;
       }
       if (fileInput.target.files[0].type != "application/pdf") {
         this.fileError = "Sólo se permiten archivos PDF";
-        this.fileName = "Carga tu CV (formato PDF | max 5MB)";
+        this.fileName = "Carga tu CV (formato PDF)";
         this.fileValid = false;
         return false;
       }

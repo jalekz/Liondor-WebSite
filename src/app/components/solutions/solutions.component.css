@@ -1,6 +1,6 @@
 .solutions {
-    padding-top: 6.125rem;
-    padding-bottom: 5.25rem;
+    padding-top: 1.125rem;
+    padding-bottom: 3.25rem;
 }
 
 .solutions .image-container {
@@ -74,7 +74,7 @@
 
 @media (min-width: 1200px) {
     .solutions {
-        padding-bottom: 6.125rem;
+        padding-bottom: 3.125rem;
     }
     .solutions .image-container {
         margin-right: 1.5rem;

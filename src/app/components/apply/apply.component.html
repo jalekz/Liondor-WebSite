@@ -14,7 +14,7 @@
                 </div>
                 <div [class]="'grid'">
                     <div *ngFor="let apply of applies; let last = last" ngClass="apply-item" [class]="'vac-' + apply.filterID">
-                        <a [attr.data-toggle]="'modal'" [attr.data-target]="'#exampleModal'" href="#vac-1" (click)="this.applySelected = apply;">
+                        <a [attr.data-toggle]="'modal'" [attr.data-target]="'#applyModal'" href="#vac-1" (click)="this.applySelected = apply;">
                             <div ngClass="apply-item-overlay">
                                 <span>{{apply.title}} {{last ? createGrid() : ''}}</span>
                             </div>
@@ -27,11 +27,11 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{this.applySelected.modalTitle}}</h5>
+                <h5 class="modal-title" id="applyModalLabel">{{this.applySelected.modalTitle}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
