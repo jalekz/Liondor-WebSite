@@ -1,6 +1,5 @@
 .howto .area-1 {
     height: 27rem;
-    /* background: url('https://fakeimg.pl/710x550') center center no-repeat; */
     background: url('../../../assets/img/new/howto1.jpg') center center no-repeat;
     background-size: cover;
 }
@@ -170,7 +169,6 @@
 
 .howto2 .area-2 {
     height: 27rem;
-    /* background: url('https://fakeimg.pl/710x550') center center no-repeat; */
     background: url('../../../assets/img/new/howto2.jpg') center center no-repeat;
     background-size: cover;
 }
