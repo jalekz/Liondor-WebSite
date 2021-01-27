@@ -43,7 +43,7 @@ export class ApplyComponent implements OnInit {
     });
     setTimeout(() => {
       $(".all-filter").click();
-    }, 1000);    
+    }, 2000);    
   }
 
   createGrid() {

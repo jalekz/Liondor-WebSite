@@ -79,6 +79,18 @@
 
 /* Mediaqueries */
 
+@media (max-width: 768px) {
+    .home {
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .home {
+        height: 500px;
+    }
+}
+
 @media (min-width: 768px) {
     .home .home-content {
         padding-top: 13rem;
