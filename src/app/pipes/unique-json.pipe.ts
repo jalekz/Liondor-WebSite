@@ -10,7 +10,7 @@ export class UniqueJsonPipe implements PipeTransform {
   
       value.forEach(e => {
         if(uniqueList.length > 0) {
-          if(!uniqueList.includes(e.filterID)) {
+          if(!uniqueList.includes(e.filterID + "|" + e.category)) {
             uniqueList.push(e.filterID + "|" + e.category);
           }
         }
